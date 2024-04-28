@@ -1,0 +1,60 @@
+<style type="text/css">
+			* {
+				font-family: Arial, Verdana, sans-serif;
+				color: #665544;
+				text-align: center;}
+			body {
+				width: 100%;
+				margin: 0 auto;
+                background-image: url("https://static.vecteezy.com/system/resources/previews/008/014/115/non_2x/tropical-leaves-background-design-summer-leaves-flat-illustration-simple-banner-with-copy-space-free-vector.jpg");
+                background-repeat:no-repeat;
+                background-size: cover;
+                }
+			#content {
+				overflow: auto;}
+			#nav, #feature, #footer {
+				margin: 1%;}
+			.column1, .column2, .column3 {
+				width: 31.3%;
+				float: left;
+				margin: 1%;}
+			.column3 {
+				margin-right: 0%;
+                }
+			li {
+				display: inline;
+				padding: 0.5em;}
+			#nav, #footer {
+				background-color: #ff80ff;
+				padding: 0.5em 0;
+text-align: center;
+}
+			#feature, .article {
+				height: 10em;
+				margin-bottom: 1em;
+				background-color: #efefef;}
+            #feature {
+              background-color: #add8e6;
+              background-image: url("https://www.lunapic.com/editor/premade/transparent.gif");
+              background-size:contain;
+              background-position: right;
+              background-repeat:no-repeat;
+              text-align: center;
+}
+        
+            .column1{
+              background-color: #00ffff;
+              text-align: center;
+            }
+            .column2{
+              background-color: #cc9977;
+              text-align: center;
+            }
+             .column3{
+              background-color: #bbdda7;
+               text-align: center;
+            }
+
+            
+
+		</style>
