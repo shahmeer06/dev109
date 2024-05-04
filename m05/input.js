@@ -3,7 +3,7 @@ let table = prompt("Enter the table you would like to use");
 table = parseInt(table); // Unit of table
 var operator = 'addition'; // Type of calculation
 var i = 1;                 // Set counter to 1
-var msg = '';              // Message
+var msg = '<h2>Multiplication Table</h2>';              // Message
 
 
 if (operator === 'addition') {
@@ -21,5 +21,7 @@ if (operator === 'addition') {
 }
 
 // Write the message into the page
+
 var el = document.getElementById('blackboard');
+
 el.innerHTML = msg;
