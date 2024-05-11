@@ -2,3 +2,9 @@
         display: inline-block;
         margin: 10px;
     }
+.line {
+        white-space: pre;
+    }
+#rhombusContainer {
+        text-align: center; /* Center the rhombus container */
+    }
