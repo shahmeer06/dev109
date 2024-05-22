@@ -1,7 +1,9 @@
 function valForm() {
-    if (firstName() //&&
-       // lastName()
+    if (firstName() && lastName() && email()
+        
     )
+      
+      
     return true;
     else
         document.getElementById("submiterror").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
@@ -62,3 +64,21 @@ function lastName(){
 
     return (validLastname);
 };
+
+Email.addEventListener('blur', email, false);
+function email(){
+  var validEmail = false;
+  var userEmail = document.getElementById("email").value;
+var atpos = userEmail.indexOf("@");
+var dotpos = userEmail.lastIndexOf(".");
+if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length) {
+      
+  errorMessages += "<p>Invalid Email</p>";
+  
+}
+else
+    validEmail = true;
+  
+}
+
+
