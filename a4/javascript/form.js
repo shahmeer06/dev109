@@ -30,7 +30,7 @@ function firstName(){
         } else {
                 validFirstname = true;
                 console.log("First name valid")
-        };
+        }
 
  
     document.getElementById("fname").innerHTML = errorMessages;
@@ -57,28 +57,35 @@ function lastName(){
         } else {
                 validFirstname = true;
                 console.log("Last name valid")
-        };
+        }
 
  
     document.getElementById("lname").innerHTML = errorMessages;
 
     return (validLastname);
-};
+}
 
 Email.addEventListener('blur', email, false);
 function email(){
   var validEmail = false;
-  var userEmail = document.getElementById("email").value;
-var atpos = userEmail.indexOf("@");
-var dotpos = userEmail.lastIndexOf(".");
-if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length) {
-      
-  errorMessages += "<p>Invalid Email</p>";
-  
+  var userEmail = document.getElementById("Email").value;
+const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+if (emailPattern.test(userEmail)) {
+                validEmail = true;
+            } else {
+                errorMessages += "<p>Invalid Email</p>";
+            }
 }
-else
-    validEmail = true;
+Phone.addEventListener('blur', email, false);
+function Phone(){
+  var validPhone = false;
   
+ var phone = document.getElementById("Phone").value;
+if (isNaN(phone) || phone.length >15 || phone===null || phone==="")
+     errorMessages += "<p>Invalid Email</p>";
+else
+  validPhone = true;
+
 }
 
 
