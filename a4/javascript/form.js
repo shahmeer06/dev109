@@ -1,5 +1,5 @@
 function valForm() {
-    if (firstName() && lastName() && email()
+    if (firstName() && lastName() && email() && Phone()
         
     )
       
@@ -67,22 +67,24 @@ function lastName(){
 
 Email.addEventListener('blur', email, false);
 function email(){
+  var errorMessages="";
   var validEmail = false;
   var userEmail = document.getElementById("Email").value;
-const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const emailPattern = /\S+@\S+\.\S+/;
 if (emailPattern.test(userEmail)) {
                 validEmail = true;
             } else {
                 errorMessages += "<p>Invalid Email</p>";
             }
 }
-Phone.addEventListener('blur', phone, false);
+Phone.addEventListener('blur', email, false);
 function Phone(){
   var validPhone = false;
+  var errorMessages="";
   
  var phone = document.getElementById("Phone").value;
 if (isNaN(phone) || phone.length >15 || phone===null || phone==="")
-     errorMessages += "<p>Invalid Email</p>";
+     errorMessages += "<p>Invalid Phone Number</p>";
 else
   validPhone = true;
 
