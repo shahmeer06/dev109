@@ -76,7 +76,7 @@ if (emailPattern.test(userEmail)) {
                 errorMessages += "<p>Invalid Email</p>";
             }
 }
-Phone.addEventListener('blur', email, false);
+Phone.addEventListener('blur', phone, false);
 function Phone(){
   var validPhone = false;
   
