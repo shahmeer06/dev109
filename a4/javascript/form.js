@@ -97,7 +97,7 @@ else{
   console.log("phone true");
   }
 document.getElementById("pnum").innerHTML = errorMessages;
-return validPhone();
+return validPhone;
 }
 
 
