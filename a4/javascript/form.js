@@ -49,7 +49,7 @@ function lastName(){
 
   
     if (lastname==="null" || lastname==="" || lastname.length > 50 ) {
-        errorMessages += "<p>The first name is required and cannot be greater than 50 characters</p>";
+        errorMessages += "<p>The last name is required and cannot be greater than 50 characters</p>";
         console.log("Last name invalid — length")
         } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
             errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
@@ -78,4 +78,26 @@ if (emailPattern.test(userEmail)) {
                 errorMessages += "<p>Invalid Email</p>";
                 console.log("flase email");
             }
+  
+  document.getElementById("email").innerHTML = errorMessages;
+  return validEmail;
+  
 }
+Phone.addEventListener('blur', Phone_num, false);
+function Phone_num(){
+  var validPhone = false;
+  var errorMessages="";
+  
+ var phone = document.getElementById("Phone").value;
+if (isNaN(phone) || phone.length >15 || phone===null || phone===""){
+     errorMessages += "<p>Invalid Phone Number</p>";
+    console.log("phone false"); }
+else{
+  validPhone = true;
+  console.log("phone true");
+  }
+document.getElementById("pnum").innerHTML = errorMessages;
+return validPhone();
+}
+
+
