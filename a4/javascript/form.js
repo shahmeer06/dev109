@@ -100,5 +100,29 @@ else{
 document.getElementById("pnum").innerHTML = errorMessages;
 return validPhone;
 }
+function Username(){
+
+  var validUsername=false;
+
+ 
+    var username = document.getElementById("Username").value;
+    var errorMessages = "";
+
+  
+    if (username==="null" || username==="" || username.length > 12 ) {
+        errorMessages += "<p>The user name is required and cannot be greater than 12 characters</p>";
+        console.log("user name invalid — length")
+        
+        } else {
+                validUsername = true;
+                console.log("User name valid")
+
+}
+
+  document.getElementById("uname").innerHTML = errorMessages;
+
+    return (validUsername);
+  
+}
 
 
