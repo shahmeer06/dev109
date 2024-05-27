@@ -1,7 +1,8 @@
 function valForm() {
-    if (firstName() && lastName() && email() && Phone_num()
+    if (firstName() && lastName() && email() && Phone_num())
+      return true;
         
-    )
+    
       
       
     return true;
