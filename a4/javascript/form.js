@@ -1,17 +1,35 @@
 function valForm() {
-    if (firstName() && lastName() && email() && Phone_num() && Username()){
+    //if (firstName() && lastName() && email() && Phone_num() && Username())
+  console.log("test1")
+  if(firstName())
+    {
+      console.log("here")
       return true;
     }
+  
+        
     
       
       
     
-    else{
+    else
         document.getElementById("submiterror").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
         event.preventDefault();
         return false;
+}
+
+function validateFields(){
+
+  var form_res = false;
+  
+  if(firstName() && lastName() && email() && Phone_num && Username())
+    {
+      return true;
     }
-    }
+  return form_res;
+  
+}
+
 FirstName.addEventListener('blur', firstName, false);
 function firstName(){
 
@@ -37,7 +55,7 @@ function firstName(){
     document.getElementById("fname").innerHTML = errorMessages;
 
     return (validFirstname);
-};
+}
 
 LastName.addEventListener('blur', lastName, false);
 function lastName(){
@@ -49,14 +67,20 @@ function lastName(){
     var errorMessages = "";
 
   
-    if (lastname==="null" || lastname==="" || lastname.length > 50 ) {
+    if (lastname==="null" || lastname==="" || lastname.length > 50 ) 
+    {
         errorMessages += "<p>The last name is required and cannot be greater than 50 characters</p>";
         console.log("Last name invalid — length")
-        } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
+        
+        }
+    else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) 
+    {
             errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
             console.log("Last name invalid — bad characters")
-        } else {
-                validFirstname = true;
+        } 
+    else 
+        {
+                validLastname = true;
                 console.log("Last name valid")
         }
 
@@ -100,16 +124,19 @@ else{
 document.getElementById("pnum").innerHTML = errorMessages;
 return validPhone;
 }
-function Username(){
+
+Username.addEventListener('blur', username, false);
+
+function username(){
 
   var validUsername=false;
 
  
-    var username = document.getElementById("Username").value;
+    var user = document.getElementById("Username").value;
     var errorMessages = "";
 
   
-    if (username==="null" || username==="" || username.length > 12 ) {
+    if (user==="null" || user==="" || user.length > 12 ) {
         errorMessages += "<p>The user name is required and cannot be greater than 12 characters</p>";
         console.log("user name invalid — length")
         
@@ -124,5 +151,4 @@ function Username(){
     return (validUsername);
   
 }
-
 
