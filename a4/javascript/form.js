@@ -209,6 +209,34 @@ document.getElementById("addy").innerHTML = errorMessages;
   
 }
 
+City.addEventListener('blur', city, false);
+
+function city(){
+
+  var validCity=false;
+
+ 
+    var city_user = document.getElementById("City").value;
+    var errorMessages = "";
+
+  
+    if (city_user==="null" || city_user==="") {
+        errorMessages += "<p>The City is required</p>";
+        console.log("city invalid — length")
+        
+        } else {
+                validAdd = true;
+                console.log("City valid")
+
+}
+
+document.getElementById("city").innerHTML = errorMessages;
+
+    return (validAdd);
+  
+  
+}
+
 
 
 
