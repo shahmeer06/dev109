@@ -1,9 +1,9 @@
 function valForm() {
     //if (firstName() && lastName() && email() && Phone_num() && Username())
-  console.log("test1")
-  if(firstName())
+ 
+  if(firstName() && lastName() && email() && Phone_num() && Username() && password())
     {
-      console.log("here")
+      
       return true;
     }
   
@@ -145,10 +145,44 @@ function username(){
                 console.log("User name valid")
 
 }
+  
 
   document.getElementById("uname").innerHTML = errorMessages;
 
     return (validUsername);
   
 }
+
+Password.addEventListener('blur', password, false);
+
+function password(){
+
+  var validPass=false;
+
+ 
+    var pass = document.getElementById("Password").value;
+    var errorMessages = "";
+
+  
+    if (pass==="null" || pass==="" || pass.length > 7 ) {
+        errorMessages += "<p>The Password is required and cannot be greater than 7 characters</p>";
+        console.log("password invalid — length")
+        
+        } else {
+                validPass = true;
+                console.log("Password valid")
+
+}
+
+document.getElementById("pword").innerHTML = errorMessages;
+
+    return (validPass);
+  
+  
+}
+
+
+
+
+
 
