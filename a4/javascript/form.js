@@ -1,7 +1,7 @@
 function valForm() {
     //if (firstName() && lastName() && email() && Phone_num() && Username())
  
-  if(firstName() && lastName() && email() && Phone_num() && Username() && password() && address())
+  if(firstName() && lastName() && email() && Phone_num() && Username() && password() && address() && zip())
     {
       
       return true;
@@ -233,6 +233,56 @@ function city(){
 document.getElementById("city").innerHTML = errorMessages;
 
     return (validAdd);
+  
+  
+}
+
+State.addEventListener('blur', state, false);
+
+function state(){
+
+  var state_user = document.getElementById("State").value;
+    var errorMessages = "";
+  
+   if (state_user==="null" || state_user==="") {
+        errorMessages += "<p>The State is required</p>";
+        console.log("state invalid — length")
+        
+        } else {
+                validAdd = true;
+                console.log("State valid")
+  
+        }
+}
+
+
+Zip.addEventListener('blur', zip, false);
+function zip(){
+  
+  var country = document.getElementById("Country").value;
+  var zip_user = document.getElementById("Zip").value;
+  var validZip=false;
+  
+  if (country ==="USA"){
+    if(zip_user ==="null" || zip_user.length>5){
+      
+      errorMessages += "<p>Invalid Zip code Length</p>";
+      
+      
+    } 
+    else{
+      
+      validZip = true;
+      
+    }
+    
+    
+}
+  
+  
+  document.getElementById("country").innerHTML = errorMessages;
+
+    return (validZip);
   
   
 }
