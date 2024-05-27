@@ -1,7 +1,7 @@
 function valForm() {
     //if (firstName() && lastName() && email() && Phone_num() && Username())
  
-  if(firstName() && lastName() && email() && Phone_num() && Username() && password())
+  if(firstName() && lastName() && email() && Phone_num() && Username() && password() && address())
     {
       
       return true;
@@ -177,6 +177,34 @@ function password(){
 document.getElementById("pword").innerHTML = errorMessages;
 
     return (validPass);
+  
+  
+}
+
+Address.addEventListener('blur', address, false);
+
+function address(){
+
+  var validAdd=false;
+
+ 
+    var addy = document.getElementById("Address").value;
+    var errorMessages = "";
+
+  
+    if (addy==="null" || addy==="") {
+        errorMessages += "<p>The Address is required</p>";
+        console.log("address invalid — length")
+        
+        } else {
+                validAdd = true;
+                console.log("Address valid")
+
+}
+
+document.getElementById("addy").innerHTML = errorMessages;
+
+    return (validAdd);
   
   
 }
