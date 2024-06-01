@@ -38,7 +38,20 @@ img {
     background-color: rgba(0,0,0,0.8);
 }
 
-/* Styles for description */
+
 .description {
     margin-top: 10px;
 }
+
+.validator-icons {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.validator-icons img {
+    width: 88px; 
+    height: 31px;
+    margin-bottom: 5px;
+}
+
