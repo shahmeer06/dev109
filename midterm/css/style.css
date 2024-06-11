@@ -41,7 +41,7 @@
 text-align: center;
 }
 			#feature, .article {
-				height: 10em;
+				height: 23em;
 				margin-bottom: 1em;
 				background-color: #efefef;}
             #feature {
@@ -50,20 +50,23 @@ text-align: center;
               background-size:contain;
               background-position: right;
               background-repeat:no-repeat;
-              text-align: center;
+              text-align: left;
 }
         
             .column1{
               background-color: #00ffff;
               text-align: center;
+              height: 34em;
             }
             .column2{
               background-color: #cc9977;
               text-align: center;
+              height: 34em;
             }
              .column3{
               background-color: #bbdda7;
                text-align: center;
+               height: 34em;
             }
       
           h1{
