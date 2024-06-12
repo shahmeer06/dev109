@@ -11,7 +11,12 @@
 }
 
 
-
+ h1{
+             
+        background-color:powderblue;
+  font-style: normal;
+              font-size: 50px;
+          }
 
 			body {
 				width: 100%;
@@ -25,7 +30,7 @@
 				overflow: auto;}
 			#nav, #feature, #footer {
 				margin: 1%;}
-			.column1, .Artifacts, .column3, .column4, .column5, .column2, .column6, .column7, .column8, .column9 {
+			.column1, .column2, .column3 {
 				width: 31.3%;
 				float: left;
 				margin: 1%;}
@@ -39,10 +44,9 @@
 				background-color: #ff80ff;
 				padding: 0.5em 0;
 text-align: center;
-           
 }
 			#feature, .article {
-				height: 10em;
+				height: 18em;
 				margin-bottom: 1em;
 				background-color: #efefef;}
             #feature {
@@ -53,30 +57,26 @@ text-align: center;
               background-repeat:no-repeat;
               text-align: center;
 }
-        .column{
-				width: 31.3%;
-				float: left;
-				margin: 1%;}
-			.column3 {
-				margin-right: 0%;
-                }
-		
-              
-              
+        
+            .column1{
+              background-color: #00ffff;
+              text-align: center;
+              height: 34em;
+            }
+            .column2{
+              background-color: #cc9977;
+              text-align: center;
+              height: 34em;
+            }
+             .column3{
+              background-color: #bbdda7;
+               text-align: center;
+               height: 34em;
+            }
       
-      
-          h1{
-              font-family: "Jersey 10", sans-serif;
-        background-color:powderblue;
-  font-style: normal;
-              font-size: 50px;
-          }
+         
 
-            
-
-		</style>
-
-#errorMessages{
+  #errorMessages{
 color:red;
 }
 
@@ -86,3 +86,6 @@ color:red;
 .warning {
     color: red;
 }
+
+		</style>
+
