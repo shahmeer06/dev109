@@ -1,20 +1,14 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Midterm</title>
-    <script src="https://localhost:49506/8ee4ea609a6346c4cf34c2b621ac79ba.js?nc=Njc0ODM2"></script>
-    <link rel="stylesheet" type="text/css" href="https://shahmeer06.github.io/dev109/midterm/css/contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Jersey+10&display=swap" rel="stylesheet">
-</head>
-<body>
-  
- 
-  
-<div id="header">
+    <head>
+        <meta name="description" content="Artifact 04 - Contact Us">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="https://shahmeer06.github.io/dev109/midterm/css/contact.css"/>
+        <title>Contact</title>
+    </head>
+    <body>
+        <form id="myform" action="https://shahmeer06.github.io/dev109/a4/thankyou.html" onsubmit=" return validateFields();">
+            
+          <div id="header">
     <h1>Contact</h1>
     <div id="nav">
         <ul>
@@ -29,37 +23,38 @@
         </ul>
     </div>
 </div>
-
 <div id="feature">
     <div>
-      
-       <form id="myform" action="https://shahmeer06.github.io/dev109/a4/thankyou.html" onsubmit=" return valForm();" target="_blank">
-      
-      <p>
-         <label for='Names'>Name:</label>
-                <input type="text" id="Names" name="Names" />
+          <p>
+                <label for='FullName'>Name:</label>
+                <input type="text" id="FullName" name="FullName" />
             </p>
-            <div class="warning" id="Names99"></div>
-        <p>
-        <label for="email">Email:</label>
-        <input type="text" id="email" required>
-          <div class="warning" id="email"></div>
-      </p>
-    
-        
-        <label for="comment">Comment:</label>
-        <input type="text" id="comment" required>
-   <div class="warning" id="comment"></div>
-        
-         <p>
+            <div class="warning" id="fname"></div>
+          
+          <p>
+                <label for='Com'>Comment:</label>
+                <input type="text" id="Com" name="Com" />
+            </p>
+            <div class="warning" id="comment"></div>
+          
+          <p>
+                <label for='Email'>Email:</label>
+                <input type="text" id="Email" name="Email" />
+            </p>
+            <div class="warning" id="email"></div>
+          <div id="errorMessages"></div>
+          
+          
+            <p>
                 <input type="submit" id="submit" name="submit" value="Submit">
             </p>
         
             <div class="warning" id="submiterror"></div>
-    </div>
-</div>
-  
-  </form>
-   <script src="https://shahmeer06.github.io/dev109/midterm/javascript/script.js" type="text/javascript"></script>
-</body>
+        
+         
+          
+        </form>
+
+        <script src="https://shahmeer06.github.io/dev109/a4/javascript/form.js" type="text/javascript"></script>
+    </body>
 </html>
