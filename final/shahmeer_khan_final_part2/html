@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Shahmeer_Khan_final_part2</title>
+</head>
+<body>
 
+  <h2>What was your previous knowledge of HTML/CSS/Javascript?</h2>
+  <li>I had no experience at all with HTML and CSS. However I had ample expereince with Java Script after AP computer science and CS 210/211 at Bellevue College.</li>
+    <li>I am also very familiar with Java Script because I know Python which follows a simialar process but with different syntax</li>
+      
+    <h2>Did you use a template or did you build your portfolio from scratch and why?</h2>
+  
+    <li>I used the template I created from Module 4(the liquid layout). I decided to use this as it was cery close to a design I had sketched out before I started coding so it would save me time. Adding on the template I had created included all the requirements that were required such as a nav bar.</li>
+      
+    <h2>What was your most challenging part of your portfolio (ie, the template, artifacts, CSS, etc.)?</h2>
+      <li>I think that the section I had ther most trouble with was the CSS aspect of the website. This is because I am very weak in my CSS skills and I have more expreience with working on the back end of projects with python and java script.</li>
+      <li>Adding on, I have struggled with digital design in the past which could also contribute to this
+
+        <h2>How did this class change your view on Web Development?</h2>
+        
+        <li>Originaly I thought that web celepment was simple and easy to learn as I know so many people who know basic web devlopment. However as the course went on I realized that there is a lot to web development and it has become a bit overwhelming at times with the amount of different tags and calls to keep track of</li>
+  <li>However now I realized I like web devlopment more that doing the back end code because I can visually see wha ti am achieving</li>
+  
+  <h2>What would you recommend to future students taking this class?</h2>
+  <li>One thing I would reccomened to future students is whever you are working to keep a W3Schools tab open so you can quickly reference it if you forget any tags</li>
+  <li>Another reccomendation I have is be continuosly validating your code throught the project not just when you finish it. This is because if you spent a long time on that project you wont want to go back and make a bunch of changes after you spent so long working on it
+  
+  
+  
+  
+ </body>
+</html>
